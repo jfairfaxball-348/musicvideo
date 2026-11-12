@@ -1,0 +1,12 @@
+*.mp3
+*.wav
+*.flac
+*.mp4
+*.mkv
+*.avi
+*.safetensors
+*.gguf
+.local/
+.venv/
+output/
+__pycache__/

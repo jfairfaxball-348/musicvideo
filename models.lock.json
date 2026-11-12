@@ -1,0 +1,20 @@
+[
+  {
+    "repo": "calcuis/wan-1.3b-gguf",
+    "name": "wan2.1-vace-1.3b-q5_k_m.gguf",
+    "revision": "0652f175f44055eb60cca26dd7cd89c14abe22ce",
+    "sha256": "6c485e0ba507e643627689802557f4988261da525f88c6583c4fee7c285000b7"
+  },
+  {
+    "repo": "city96/umt5-xxl-encoder-gguf",
+    "name": "umt5-xxl-encoder-Q4_K_M.gguf",
+    "revision": "b535255bee98c2b0a59ea7c0ae2dcd0c6657b3b7",
+    "sha256": "17cf97a5bbbc60a646d6105b832b6f657ce904a8a1ad970e4b59df0c67584a40"
+  },
+  {
+    "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+    "name": "split_files/vae/wan_2.1_vae.safetensors",
+    "revision": "123acf1cc74bccbb9bfff8ac1ee72edc08c2341d",
+    "sha256": "2fc39d31359a4b0a64f55876d8ff7fa8d780956ae2cb13463b0223e15148976b"
+  }
+]

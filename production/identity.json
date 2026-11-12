@@ -1,0 +1,19 @@
+{
+  "cast": {
+    "vocalist": "Wiry olive-skinned frontman, dense halo of black corkscrew curls, burgundy sleeveless tank exposing bare shoulders; black handheld wired microphone with a small round silver grille. At downstage centre.",
+    "guitarist": "Black woman with a close buzz cut, faded mustard work shirt open over a black tank, battered cream solid-body electric guitar with black pickguard. At audience left.",
+    "bassist": "Broad-shouldered pale man with long copper hair, navy mechanic coveralls, black four-string bass on a canvas strap. At audience right.",
+    "drummer": "Muscular brown-skinned man with shaved head, white sleeveless tee, large oxblood acoustic drum kit and brass cymbals on the centre rear riser.",
+    "stage": "Enormous open-air festival in a dusty field, scaffold towers, black stage drape, four musicians on stage, amber PAR cans, audience stretching to the tree line.",
+    "crowd": "Dense sea of young adult festival fans in faded cotton shirts behind a steel crush barrier, long-haired fans, fists in air, late afternoon dust over distant trees."
+  },
+  "look": "Candid late-1990s live concert documentary footage. Breezy outdoor festival, warm amber sidelight, weathered black stage drape, sweaty skin, deep shadows, dusty 35mm film, natural motion blur, photorealistic.",
+  "base_seeds": {
+    "vocalist": 78123,
+    "guitarist": 78242,
+    "bassist": 78361,
+    "drummer": 78480,
+    "stage": 78599,
+    "crowd": 78718
+  }
+}
