@@ -25,3 +25,9 @@ Each shot first requests a unique reference-conditioned motion sequence at 768 �
 A direct MP3 stream-copy test produced 1,137 extra decoded samples in an MP4. A 24-bit ALAC encode preserved the decoded soundtrack hash. A conform test with two H.264 segments and a shortened final frame preserved exactly 46,700 audio samples of duration in both track headers after muxing. The release check repeats the comparisons on the actual master, decodes every frame and audio sample, checks frame timestamps, and creates one labeled thumbnail per shot.
 
 Final run evidence is generated in `output/manifest.json`, `output/validation.json` and the contact sheets. Character likeness, hand and instrument geometry, concert continuity, lip articulation and audience reactions require visual review beyond the automated checks.
+
+## First production shot
+
+Shot 0001 completed the 640 × 368 reference-to-video pass with 41 generated frames and 20 sampling steps. The engine reported 527.66 seconds for that pass. The complete shot, including the first reference, the higher-resolution memory failure, retry and encode, took 751.0 seconds. The 1920 × 1080 H.264 shot decoded to 82 display frames. Four inspection frames show the camera advancing toward the outdoor stage between groups of spectators. The camera is in front of the stage despite the rear-view prompt. This shot supplies the establishing view; the remaining shots have their own prompts and seeds.
+
+The independent worker resumed at shot 0002 after a boundary restart and preserved the opening clip hash. The Windows sign-in task was registered and read back as ready. An actual machine reboot was not performed.
