@@ -19,7 +19,7 @@ For an existing installation and edit, run the first command below. To stop at t
 .\Start-Production.ps1 -Foreground
 ```
 
-The background worker owns an exclusive Windows file lock. Its manifest in `output/manifest.json` records shot settings, work times, hashes and progress. Successfully recorded shots survive a reboot. Every restart verifies their hashes. An interrupted shot is regenerated. Generation, retries, interpolation and mux logs are under `.local/logs`; references and encoded shots are under `.local/refs` and `.local/shots`. On the production laptop the Windows scheduled task **LNMA Music Video Resume** also resumes an unfinished job at user sign-in. A clean stop marker suppresses that automatic resume.
+A background supervisor restarts an unexpectedly terminated worker and bounds retries at a failing shot. The renderer owns an exclusive Windows file lock. Its manifest in `output/manifest.json` records shot settings, work times, hashes and progress. Successfully recorded shots survive a reboot. Every restart verifies their hashes. An interrupted shot is regenerated. Generation, retries, interpolation and mux logs are under `.local/logs`; references and encoded shots are under `.local/refs` and `.local/shots`. On the production laptop the Windows scheduled task **LNMA Music Video Resume** also resumes an unfinished job at user sign-in. A clean stop marker suppresses that automatic resume.
 
 ## Production files
 
@@ -34,4 +34,3 @@ The final checked master is written to `output/LNMA_Live_Rap_Metal_Official_Musi
 ## Master format
 
 The picture has 1920 × 1080 H.264 frames on a 24 fps grid. The last frame ends at the final audio sample. The stereo soundtrack uses lossless ALAC from the original MP3 decode. Validation checks both track end times, every video timestamp, decoded frame count, darkness, duplicate thumbnails, decoded sample count and a 24-bit PCM hash of the soundtrack. Subject motion and identity still need visual judgment.
-

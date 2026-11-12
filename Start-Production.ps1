@@ -33,9 +33,9 @@ if ($Setup) {
 }
 if (Test-Path .local/STOP) { Remove-Item -LiteralPath .local/STOP }
 if ($Foreground) {
-    Invoke-Checked $python @('-u','render.py')
+    Invoke-Checked $python @('-u','supervise.py')
 } else {
     $stamp = Get-Date -Format yyyyMMdd-HHmmss
     $log = Join-Path $PSScriptRoot ".local\logs\worker-$stamp"
-    Start-Process -FilePath $python -ArgumentList '-u','render.py' -WorkingDirectory $PSScriptRoot -WindowStyle Hidden -RedirectStandardOutput "$log.out" -RedirectStandardError "$log.err" -PassThru | Select-Object Id
+    Start-Process -FilePath $python -ArgumentList '-u','supervise.py' -WorkingDirectory $PSScriptRoot -WindowStyle Hidden -RedirectStandardOutput "$log.out" -RedirectStandardError "$log.err" -PassThru | Select-Object Id
 }
